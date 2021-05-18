@@ -1,0 +1,13 @@
+uuid: 99688335-af11-47af-8fe4-76bbf5b42749
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+  enforced:
+    module:
+      - islandora_display    
+id: node.pdfjs_viewer
+label: 'PDFjs Viewer'
+targetEntityType: node
+cache: true

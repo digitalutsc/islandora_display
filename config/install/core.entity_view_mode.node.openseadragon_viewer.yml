@@ -1,0 +1,13 @@
+uuid: ce57e69f-2cf3-449c-be33-4abf09188f89
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+  enforced:
+    module:
+      - islandora_display    
+id: node.openseadragon_viewer
+label: 'OpenSeadragon Viewer'
+targetEntityType: node
+cache: true

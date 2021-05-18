@@ -1,0 +1,5 @@
+name: 'Islandora Display'
+type: module
+description: 'Islandora Content Type Configurations'
+core: 9.x
+package: 'islandora'

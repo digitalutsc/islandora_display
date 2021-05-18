@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains islandora_display.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function islandora_display_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the islandora_display module.
+    case 'help.page.islandora_display':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Islandora Content Type Configurations') . '</p>';
+      return $output;
+
+    default:
+  }
+}

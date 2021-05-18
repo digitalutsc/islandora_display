@@ -1,0 +1,31 @@
+uuid: 35ec4bda-d3c5-446e-8669-040b28b18ad7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.chartsuite_viewer
+    - core.entity_view_mode.node.openseadragon_viewer
+    - core.entity_view_mode.node.pdfjs_viewer
+    - field.storage.node.field_view_mode
+    - node.type.islandora_object
+  module:
+    - view_mode_switch
+  enforced:
+    module:
+      - islandora_display    
+id: node.islandora_object.field_view_mode
+field_name: field_view_mode
+entity_type: node
+bundle: islandora_object
+label: 'View Mode'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_view_modes:
+    chartsuite_viewer: chartsuite_viewer
+    openseadragon_viewer: openseadragon_viewer
+    pdfjs_viewer: pdfjs_viewer
+field_type: view_mode_switch
