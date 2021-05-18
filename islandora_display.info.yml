@@ -1,5 +1,11 @@
 name: 'Islandora Display'
 type: module
 description: 'Islandora Content Type Configurations'
-core: 9.x
+core: 8.x
+core_version_requirement: ^8 || ^9
+dependencies:
+  - pdf
+  - openseadragon
+  - chart_suite
+  - view_mode_switch
 package: 'islandora'
