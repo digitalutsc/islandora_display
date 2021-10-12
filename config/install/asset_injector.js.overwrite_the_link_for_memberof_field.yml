@@ -23,7 +23,6 @@ conditions:
   node_type:
     id: node_type
     bundles:
-      dsu_islandora_object: dsu_islandora_object
       islandora_object: islandora_object
     negate: false
     context_mapping:
