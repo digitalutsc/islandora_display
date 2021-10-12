@@ -1,0 +1,36 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - context
+    - node
+id: overwrite_the_link_for_memberof_field
+label: 'Overwrite the link for MemberOf field'
+code: |-
+  var oldUrl = jQuery('.field--name-field-member-of .field__items .field__item a').attr("href");
+  var newUrl = oldUrl.replace("/node/", "/collection/");   
+  jQuery('.field--name-field-member-of .field__items .field__item a').attr("href", newUrl);
+conditions_require_all: true
+conditions:
+  context:
+    id: context
+    values: ''
+    negate: null
+  context_all:
+    id: context_all
+    values: ''
+    negate: null
+  node_type:
+    id: node_type
+    bundles:
+      dsu_islandora_object: dsu_islandora_object
+      islandora_object: islandora_object
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+contexts: {  }
+header: false
+preprocess: true
+jquery: true
+noscript: ''
+noscriptRegion: {  }
