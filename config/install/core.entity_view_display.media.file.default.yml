@@ -2,25 +2,22 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.media.openseadragon_viewer
-    - field.field.media.image.field_media_image
-    - field.field.media.image.field_media_use
-    - media.type.image
+    - field.field.media.file.field_media_file
+    - field.field.media.file.field_media_use
+    - media.type.file
   module:
     - fico
-    - openseadragon
-  enforced:
-    module:
-      - islandora_display
-id: media.image.openseadragon_viewer
+    - file
+id: media.file.default
 targetEntityType: media
-bundle: image
-mode: openseadragon_viewer
+bundle: file
+mode: default
 content:
-  field_media_image:
-    type: openseadragon_image
+  field_media_file:
+    type: file_default
     label: visually_hidden
-    settings: {  }
+    settings:
+      use_description_as_link_text: true
     third_party_settings:
       fico:
         fico:

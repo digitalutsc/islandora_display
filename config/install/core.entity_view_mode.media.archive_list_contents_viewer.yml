@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.archive_list_contents_viewer
+label: 'Archive List Contents Viewer'
+targetEntityType: media
+cache: true
+

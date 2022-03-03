@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.replayweb_player_viewer
+label: 'ReplayWeb Player Viewer'
+targetEntityType: media
+cache: true
+

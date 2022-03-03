@@ -1,18 +1,19 @@
-uuid: 35ec4bda-d3c5-446e-8669-040b28b18ad7
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.chartsuite_viewer
+    - core.entity_view_mode.node.archive_list_contents_viewer
+    - core.entity_view_mode.node.csv_viewer
     - core.entity_view_mode.node.openseadragon_viewer
     - core.entity_view_mode.node.pdfjs_viewer
+    - core.entity_view_mode.node.replayweb_player_viewer
     - field.storage.node.field_view_mode
     - node.type.islandora_object
   module:
     - view_mode_switch
   enforced:
     module:
-      - islandora_display    
+      - islandora_display
 id: node.islandora_object.field_view_mode
 field_name: field_view_mode
 entity_type: node
@@ -25,7 +26,10 @@ default_value: {  }
 default_value_callback: ''
 settings:
   allowed_view_modes:
-    chartsuite_viewer: chartsuite_viewer
+    archive_list_contents_viewer: archive_list_contents_viewer
+    csv_viewer: csv_viewer
     openseadragon_viewer: openseadragon_viewer
     pdfjs_viewer: pdfjs_viewer
+    replayweb_player_viewer: replayweb_player_viewer
 field_type: view_mode_switch
+

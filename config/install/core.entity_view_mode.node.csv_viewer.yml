@@ -1,0 +1,11 @@
+uuid: d95059ca-a26c-4d6a-89a0-f788ca435c8f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.csv_viewer
+label: 'CSV Viewer'
+targetEntityType: node
+cache: true
+
