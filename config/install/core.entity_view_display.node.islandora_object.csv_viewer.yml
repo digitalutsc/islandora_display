@@ -49,7 +49,6 @@ dependencies:
     - geolocation
     - text
     - user
-    - view_mode_switch
   enforced:
     module:
       - islandora_defaults
@@ -338,13 +337,6 @@ content:
     third_party_settings: {  }
     weight: 23
     region: content
-  field_view_mode:
-    type: view_mode_switch_default
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 33
-    region: content
   islandora_fits_checksum:
     settings: {  }
     third_party_settings: {  }
@@ -363,6 +355,7 @@ hidden:
   field_model: true
   field_pid: true
   field_place_published_country: true
+  field_view_mode: true
   field_weight: true
   langcode: true
   mirador_evas_entity_view_1: true
