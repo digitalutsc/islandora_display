@@ -1,0 +1,51 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.ableplayer_viewer
+    - field.field.media.audio.ableplayer_caption
+    - field.field.media.audio.ableplayer_chapter
+    - field.field.media.audio.ableplayer_description
+    - field.field.media.audio.ableplayer_poster_image
+    - field.field.media.audio.ableplayer_sign_language
+    - field.field.media.audio.field_media_audio_file
+    - field.field.media.audio.field_media_use
+    - media.type.audio
+  module:
+    - ableplayer
+    - fico
+id: media.audio.ableplayer_viewer
+targetEntityType: media
+bundle: audio
+mode: ableplayer_viewer
+content:
+  field_media_audio_file:
+    type: ableplayer_audio
+    label: visually_hidden
+    settings:
+      viewer: '1'
+      controls: '1'
+      multiple_file_display_type: tags
+      transcript: 0
+      autoplay: 0
+      loop: 0
+    third_party_settings:
+      fico:
+        fico:
+          condition: ''
+    weight: 0
+    region: content
+hidden:
+  ableplayer_caption: true
+  ableplayer_chapter: true
+  ableplayer_description: true
+  ableplayer_poster_image: true
+  ableplayer_sign_language: true
+  created: true
+  field_media_use: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true
+

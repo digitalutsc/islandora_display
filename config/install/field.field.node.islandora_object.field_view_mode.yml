@@ -2,7 +2,9 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.ableplayer_viewer
     - core.entity_view_mode.node.archive_list_contents_viewer
+    - core.entity_view_mode.node.book_viewer
     - core.entity_view_mode.node.csv_viewer
     - core.entity_view_mode.node.openseadragon_viewer
     - core.entity_view_mode.node.pdfjs_viewer
@@ -26,7 +28,9 @@ default_value: {  }
 default_value_callback: ''
 settings:
   allowed_view_modes:
+    ableplayer_viewer: ableplayer_viewer
     archive_list_contents_viewer: archive_list_contents_viewer
+    book_viewer: book_viewer
     csv_viewer: csv_viewer
     openseadragon_viewer: openseadragon_viewer
     pdfjs_viewer: pdfjs_viewer

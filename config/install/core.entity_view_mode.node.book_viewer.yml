@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.book_viewer
+label: 'Book Viewer'
+targetEntityType: node
+cache: true
+
