@@ -8,6 +8,7 @@ dependencies:
     - core.entity_view_mode.node.csv_viewer
     - core.entity_view_mode.node.openseadragon_viewer
     - core.entity_view_mode.node.pdfjs_viewer
+    - core.entity_view_mode.node.remote_video_viewer
     - core.entity_view_mode.node.replayweb_player_viewer
     - field.storage.node.field_view_mode
     - node.type.islandora_object
@@ -34,6 +35,6 @@ settings:
     csv_viewer: csv_viewer
     openseadragon_viewer: openseadragon_viewer
     pdfjs_viewer: pdfjs_viewer
+    remote_video_viewer: remote_video_viewer
     replayweb_player_viewer: replayweb_player_viewer
 field_type: view_mode_switch
-
