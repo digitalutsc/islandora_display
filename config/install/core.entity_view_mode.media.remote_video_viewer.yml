@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.remote_video_viewer
+label: 'Remote Video Viewer'
+targetEntityType: media
+cache: true
