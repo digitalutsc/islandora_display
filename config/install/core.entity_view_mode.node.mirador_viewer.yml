@@ -1,0 +1,10 @@
+uuid: 62ecd989-aa61-4466-bbd2-f907b34bd745
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.mirador_viewer
+label: 'Mirador Viewer'
+targetEntityType: node
+cache: true
