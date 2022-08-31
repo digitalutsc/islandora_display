@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.archive_list_contents_viewer
     - core.entity_view_mode.node.book_viewer
     - core.entity_view_mode.node.csv_viewer
+    - core.entity_view_mode.node.mirador_viewer
     - core.entity_view_mode.node.openseadragon_viewer
     - core.entity_view_mode.node.pdfjs_viewer
     - core.entity_view_mode.node.remote_video_viewer
@@ -33,6 +34,7 @@ settings:
     archive_list_contents_viewer: archive_list_contents_viewer
     book_viewer: book_viewer
     csv_viewer: csv_viewer
+    mirador_view: mirador_viewer
     openseadragon_viewer: openseadragon_viewer
     pdfjs_viewer: pdfjs_viewer
     remote_video_viewer: remote_video_viewer
