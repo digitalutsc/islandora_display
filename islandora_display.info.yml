@@ -15,4 +15,5 @@ dependencies:
   - archive_list_contents
   - ableplayer
   - csvfile_formatter
+  - islandora_mirador
 package: 'islandora'
