@@ -3,16 +3,17 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.media.ableplayer_viewer
-    - field.field.media.audio.ableplayer_caption
     - field.field.media.audio.ableplayer_chapter
     - field.field.media.audio.ableplayer_description
     - field.field.media.audio.ableplayer_poster_image
     - field.field.media.audio.ableplayer_sign_language
+    - field.field.media.audio.field_ableplayer_media_caption
     - field.field.media.audio.field_media_audio_file
     - field.field.media.audio.field_media_use
     - media.type.audio
   module:
     - ableplayer
+    - ableplayer_extend
     - fico
 id: media.audio.ableplayer_viewer
 targetEntityType: media
@@ -23,13 +24,14 @@ content:
     type: ableplayer_audio
     label: visually_hidden
     settings:
-      viewer: '1'
-      controls: '1'
+      controls: true
+      autoplay: false
+      loop: false
       multiple_file_display_type: tags
-      transcript: 0
-      autoplay: 0
-      loop: 0
     third_party_settings:
+      ableplayer_extend:
+        display_ableplayer_transcript_audio: '1'
+        show_timestamp_audio: '1'
       fico:
         fico:
           condition: hide_no_taxonomy_value
@@ -39,12 +41,12 @@ content:
     weight: 0
     region: content
 hidden:
-  ableplayer_caption: true
   ableplayer_chapter: true
   ableplayer_description: true
   ableplayer_poster_image: true
   ableplayer_sign_language: true
   created: true
+  field_ableplayer_media_caption: true
   field_media_use: true
   langcode: true
   name: true

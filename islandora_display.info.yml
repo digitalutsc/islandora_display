@@ -14,6 +14,7 @@ dependencies:
   - replaywebpage
   - archive_list_contents
   - ableplayer
+  - ableplayer_extend
   - csvfile_formatter
   - islandora_mirador
 package: 'islandora'

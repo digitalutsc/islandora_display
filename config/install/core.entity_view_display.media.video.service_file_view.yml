@@ -3,7 +3,6 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.media.service_file_view
-    - field.field.media.video.ableplayer_caption
     - field.field.media.video.ableplayer_chapter
     - field.field.media.video.ableplayer_description
     - field.field.media.video.ableplayer_poster_image
@@ -41,7 +40,6 @@ content:
     weight: 0
     region: content
 hidden:
-  ableplayer_caption: true
   ableplayer_chapter: true
   ableplayer_description: true
   ableplayer_poster_image: true

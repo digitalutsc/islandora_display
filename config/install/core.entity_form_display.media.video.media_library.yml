@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.media.ableplayer_viewer
+    - core.entity_form_mode.media.media_library
     - field.field.media.video.ableplayer_chapter
     - field.field.media.video.ableplayer_description
     - field.field.media.video.ableplayer_poster_image
@@ -11,35 +11,36 @@ dependencies:
     - field.field.media.video.field_media_use
     - field.field.media.video.field_media_video_file
     - media.type.video
-  module:
-    - ableplayer
-    - ableplayer_extend
-    - fico
-id: media.video.ableplayer_viewer
+id: media.video.media_library
 targetEntityType: media
 bundle: video
-mode: ableplayer_viewer
+mode: media_library
 content:
-  field_media_video_file:
-    type: ableplayer_video
-    label: visually_hidden
+  field_media_use:
+    type: entity_reference_autocomplete
+    weight: 2
+    region: content
     settings:
-      controls: true
-      autoplay: false
-      loop: false
-      multiple_file_display_type: tags
-    third_party_settings:
-      ableplayer_extend:
-        display_ableplayer_transcript_video: '1'
-        show_timestamp_video: '1'
-      fico:
-        fico:
-          condition: hide_no_taxonomy_value
-          settings:
-            target_field: field_media_use
-            string: 'Service File'
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
     weight: 0
     region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
 hidden:
   ableplayer_chapter: true
   ableplayer_description: true
@@ -48,8 +49,8 @@ hidden:
   created: true
   field_ableplayer_media_caption: true
   field_media_use: true
-  langcode: true
+  field_media_video_file: true
   name: true
-  search_api_excerpt: true
-  thumbnail: true
+  path: true
+  status: true
   uid: true
